@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>RockBuster</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <a href="/index.html">
+                <div class="icono">
+                    <img class="logo" src="/img/icono.png" alt="logo" />
+                    <h1>RockBuster</h1>
+                </div>
+            </a>
+            <div>
+                <a href="/rutas/peliculas.html"><h1>Nuestras películas</h1></a>
+            </div>
+            <div>
+                <a href="/rutas/generos.html"><h1>Lista de géneros de películas</h1></a>               
+                
+            </div>
+            <div class="barra">
+                <input class="busqueda" id="searchInput"
+                 onkeyup="search()" type="search" name="busqueda" placeholder="¿Qué deseas buscar?" />
+                <a href="/rutas/carrito.html" >
+                    <img class="carrito" id="cart-icon"  src="/img/carrito.png" alt="carrito">
+                    <span id="cart-counter">0</span>
+                </a>
+            </div>
+        </nav>
+        <div class="banner">
+            <img src="/img/banner3.png" alt="banner" />
+            <div class="texto_banner">
+                <h1 class="titulo_banner">Aprovecha nuestras promociones!!!</h1>
+                <h2 class="subtitulo_banner">Peliculas hasta con el 50% de descuento</h2>
+            </div>
+    </header>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/peliculas.css">
+    <title>Carrito de compras</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <a href="/index.html">
+                <div class="icono">
+                    <img class="logo" src="/img/icono.png" alt="logo" />
+                    <h1>RockBuster</h1>
+                </div>
+            </a>
+            <div>
+                <a href="/rutas/peliculas.html"><h1>Nuestras películas</h1></a>
+            </div>
+            <div>
+                <a href="/rutas/generos.html"><h1>Lista de géneros de películas</h1></a>               
+                
+            </div>
+            <div class="barra">
+                <input class="busqueda" id="searchInput"
+                 onkeyup="search()" type="search" name="busqueda" placeholder="¿Qué deseas buscar?" />
+                <a href="/rutas/carrito.html" >
+                    <img class="carrito" id="cart-icon"  src="/img/carrito.png" alt="carrito">
+                    <span id="cart-counter">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <h1>Carrito de Compras</h1>
+        <p>Total de elementos en el carrito: <span id="cart-counter">0</span></p>
+        <table id="cart-items">
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Precio</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+    <script src="/index.js"></script>
+</body>
+
+</html>
