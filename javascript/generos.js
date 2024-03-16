@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const row = tableBody.insertRow();
             row.innerHTML = `
             <td>${movie}</td>
-            <td>${movie.rental_rate}</td> <!-- Agrega el precio de alquiler -->
+            <td>${movie.replacement_cost}</td> <!-- Agrega el precio de alquiler -->
             <td><button class="btn-buy" data-movie-id="${movie.film_id}">Comprar</button></td>
         `;
         console.log(movie);
