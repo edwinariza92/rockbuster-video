@@ -47,7 +47,7 @@ app.get('/peliculas/:genero', async (req, res) => {
     const conection = await database.getConection()
     const genero = req.params.genero;
     const query = `
-    SELECT film.title, film.replacement_cost 
+    SELECT film.title, film.rental_rate
         FROM film 
         INNER JOIN film_category ON film.film_id = film_category.film_id 
         INNER JOIN category ON film_category.category_id = category.category_id 
